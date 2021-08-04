@@ -35,10 +35,10 @@ src: url("https://static.tumblr.com/6gxqfug/DgDqf8rvb/suisse.otf");
   }
 
 
-  a:link { text-decoration: none; color: ##0000ff; }
-  a:active { text-decoration: none; color: ##0000ff; }
-  a:visited { text-decoration: none; color: ##0000ff; }
-  a:hover { color: transparent; text-shadow: ##0000ff 0 0 8px; text-decoration: none;}
+  a:link { text-decoration: none; color: #ff0000; }
+  a:active { text-decoration: none; color: #ff0000; }
+  a:visited { text-decoration: none; color: #ff0000; }
+  a:hover { color: transparent; text-shadow: #ff0000 0 0 8px; text-decoration: none;}
 
 
 
@@ -90,10 +90,7 @@ margin: auto;
 
 }
 
-  a.links :link  { text-decoration: none; color: #ffffff; }
-  a.links:active { text-decoration: none; color: #ffffff; }
-  a.links:visited { text-decoration: none; color: #ffffff; }
-  a.links:hover { color: transparent; text-shadow: #ff0000 0 0 8px; text-decoration: none;}
+
 
   .button1 {
     padding:0.3em 1.2em;
