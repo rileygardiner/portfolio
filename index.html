@@ -40,24 +40,27 @@
       $(".invert-me").css("filter", "invert(1)");
       if ( state ) {
         $( "body" ).animate({
-          backgroundColor: "#fafafa",
+          backgroundColor: "#fdfefd",
           color: "#000000",
         }, 300 );
+        $("video").css('filter', 'invert(100%)');
 
       }
       else {
         $(".invert-me").css("filter", "invert(0)");
         $( "body" ).animate({
           backgroundColor: "#000000",
-          color: "#fafafa",
+          color: "#fdfefd",
 
         }, 300 );
+        $("video").css('filter', 'invert(0%)');
+
+
       }
       state = !state;
     });
   } );
 </script>
-
 
 
 </head>
@@ -151,6 +154,18 @@
     </div>
 
     <div class="row">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive" width="100%" autoplay loop muted onclick="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
+      </video>
+    </div>
+    </div>
+    <div class="row mt-3 mb-4">
+        <div class="col">
+            <p>3D render and animation for <i>Annexia</i></p>
+        </div>
+    </div>
+
+    <div class="row">
       <div class="col-md mb-4 invert">
         <a href="images/riley-gardiner-3d-apartment.jpg" class="progressive replace">
           <img src="images/riley-gardiner-3d-apartment-small.jpg" class="preview" alt="Riley Gardiner - 3D 1" />
@@ -182,16 +197,15 @@
 
 <div class="row">
 <div class="embed-responsive embed-responsive-16by9">
-  <video class="embed-responsive" width="100%" autoplay loop muted onclick="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
+  <video class="invert embed-responsive" width="100%" autoplay loop muted src="videos/riley-gardiner-livestock-logo.mp4">
   </video>
 </div>
 </div>
 <div class="row mt-3 mb-4">
     <div class="col">
-        <p>3D render and animation for <i>Annexia</i></p>
+        <p>3D render and animation at <i><a href="https://www.instagram.com/reel/CUdK3c_FNq_/"target="_blank">Livestock</a></i></p>
     </div>
 </div>
-
 <div class="row">
   <div class="col-md mb-4 invert">
     <a href="images/riley-gardiner-uaq21.jpg" class="progressive replace">
@@ -309,7 +323,7 @@
 
 
 
-<div class="row mb-4 justify-content-md-center">
+<!--<div class="row mb-4 justify-content-md-center">
   <div class="col-lg-10">
 
     <div id="carousel_4" class="carousel slide" data-bs-ride="carousel">
@@ -346,7 +360,7 @@
       <div class="col">
           <p>Logos for fictional companies</p>
       </div>
-  </div>
+  </div>-->
 
 <!--  <div class="row">
     <div class="col-md mb-4 invert">
