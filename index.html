@@ -37,25 +37,21 @@
   $( function() {
     var state = true;
     $( "img,.invert" ).on( "click", function() {
-      $(".invert-me").css("filter", "invert(1)");
+      $("video").css("filter", "invert(1)");
       if ( state ) {
         $( "body" ).animate({
           backgroundColor: "#fdfefd",
           color: "#000000",
         }, 300 );
-        $("video").css('filter', 'invert(100%)');
 
       }
       else {
-        $(".invert-me").css("filter", "invert(0)");
+        $("video").css("filter", "invert(0)");
         $( "body" ).animate({
           backgroundColor: "#000000",
           color: "#fdfefd",
 
         }, 300 );
-        $("video").css('filter', 'invert(0%)');
-
-
       }
       state = !state;
     });
@@ -155,7 +151,7 @@
 
     <div class="row">
     <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive" width="100%" autoplay loop muted onclick="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
+      <video class="embed-responsive" width="100%" playsinline loop muted onclick="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
       </video>
     </div>
     </div>
@@ -197,7 +193,7 @@
 
 <div class="row">
 <div class="embed-responsive embed-responsive-16by9">
-  <video class="invert embed-responsive" width="100%" autoplay loop muted src="videos/riley-gardiner-livestock-logo.mp4">
+  <video class="invert embed-responsive" width="100%" playsinline  loop muted src="videos/riley-gardiner-livestock-logo.mp4">
   </video>
 </div>
 </div>
