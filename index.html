@@ -36,20 +36,24 @@
 <script>
   $( function() {
     var state = true;
-    $( "img,.invert" ).on( "click", function() {
+    $( "img" ).on( "click", function() {
       $("video").css("filter", "invert(1)");
+      $("a").css("filter", "invert(1)");
+
       if ( state ) {
         $( "body" ).animate({
-          backgroundColor: "#fdfefd",
+          backgroundColor: "#ffffff",
           color: "#000000",
         }, 300 );
 
       }
       else {
         $("video").css("filter", "invert(0)");
+        $("a").css("filter", "invert(0)");
+
         $( "body" ).animate({
           backgroundColor: "#000000",
-          color: "#fdfefd",
+          color: "#ffffff",
 
         }, 300 );
       }
@@ -81,45 +85,62 @@
 
 <div class="row mt-5 mb-5">
         <div class="col spin mx-auto text-center">
-            <img src="images/riley-gardiner-cd.png" class="rotate img-fluid replace" loading=lazy alt="Riley Gardiner - CD">
+            <img src="images/riley-gardiner-cd.png" loading="eager" class="rotate img-fluid replace" alt="Riley Gardiner - CD">
         </div>
 </div>
+
 <br>
-<br>
+
+<div class="row">
+<div class="embed-responsive embed-responsive-16by9">
+  <video class="embed-responsive" width="100%" playsinline autoplay loop muted="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
+  </video>
+</div>
+</div>
+<div class="row mt-4 mb-4">
+    <div class="col">
+        <p class="links">3D render and animation for <i><a href="https://soundcloud.com/annexiaradio/"target="_blank">Annexia</a></i>.</p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md mb-4">
+      <img src="images/riley-gardiner-fmail-1.jpg" class="d-block w-100" alt="Riley Gardiner - Foreign Mail Design" />
+  </div>
+  <div class="col-md mx-auto text-center mb-4">
+      <img src="images/riley-gardiner-fmail-2.jpg" class="d-block w-100" alt="Riley Gardiner - Foreign Mail Artwork" />
+  </div>
+</div>
+
+<div class="row mt-4 mb-4">
+      <div class="col">
+          <p class="links">Design and Artwork for the FMAIL 01 compilation on <i><a href="https://foreignmail.bandcamp.com/album/foreign-mail-01/"target="_blank">Foreign Mail</a></i>. </p>
+      </div>
+  </div>
 
 <div class="row justify-content-md-center">
   <div class="col-lg-10">
     <div id="carousel_1" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner invert">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="images/riley-gardiner-thesis-6.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-6.jpg" class="preview" alt="Riley Gardiner - Process Book 1" />
-          </a>
+
+              <img src="images/riley-gardiner-thesis-6.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 1" />
+
         </div>
         <div class="carousel-item">
-          <a href="images/riley-gardiner-thesis-5.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-5.jpg" class="preview" alt="Riley Gardiner - Process Book 2" />
-          </a>
+              <img src="images/riley-gardiner-thesis-5.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 2" />
         </div>
         <div class="carousel-item">
-          <a href="images/riley-gardiner-thesis-4.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-4.jpg" class="preview" alt="Riley Gardiner - Process Book 3" />
-          </a>
+              <img src="images/riley-gardiner-thesis-4.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 3" />
         </div>
         <div class="carousel-item">
-          <a href="images/riley-gardiner-thesis-3.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-3.jpg" class="preview" alt="Riley Gardiner - Process Book 4" />
-          </a>
+              <img src="images/riley-gardiner-thesis-3.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 4" />
         </div>
         <div class="carousel-item">
-          <a href="images/riley-gardiner-thesis-2.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-2.jpg" class="preview" alt="Riley Gardiner - Process Book 5" />
-          </a>
+              <img src="images/riley-gardiner-thesis-2.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 5" />
         </div>
         <div class="carousel-item">
-          <a href="images/riley-gardiner-thesis-1.jpg" class="progressive replace d-block w-100">
-              <img src="images/riley-gardiner-thesis-small-1.jpg" class="preview" alt="Riley Gardiner - Process Book 6" />
-          </a>
+              <img src="images/riley-gardiner-thesis-1.jpg" class="d-block w-100" alt="Riley Gardiner - Process Book 6" />
         </div>
 
       </div>
@@ -138,49 +159,30 @@
 <br>
   <div class="row mt-1 mb-4">
         <div class="col">
-            <p>George Brown College thesis process book</p>
+            <p>George Brown College thesis process book.</p>
         </div>
     </div>
 
-    <div class="row">
-    <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive" width="100%" playsinline autoplay loop muted="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
-      </video>
-    </div>
-    </div>
-    <div class="row mt-3 mb-4">
-        <div class="col">
-            <p>3D render and animation for <i>Annexia</i></p>
-        </div>
-    </div>
 
     <div class="row">
-      <div class="col-md mb-4 invert">
-        <a href="images/riley-gardiner-3d-apartment.jpg" class="progressive replace">
-          <img src="images/riley-gardiner-3d-apartment-small.jpg" class="preview" alt="Riley Gardiner - 3D 1" />
-        </a>
+      <div class="col-md mb-4">
+          <img src="images/riley-gardiner-3d-apartment.jpg" class="d-block w-100" alt="Riley Gardiner - 3D 1" />
       </div>
-      <div class="col-md mb-4 invert">
-        <a href="images/riley-gardiner-3d-building.jpg" class="progressive replace">
-          <img src="images/riley-gardiner-3d-building-small.jpg" class="preview" alt="Riley Gardiner - 3D 2" />
-        </a>
+      <div class="col-md mb-4">
+          <img src="images/riley-gardiner-3d-building.jpg" class="d-block w-100" alt="Riley Gardiner - 3D 2" />
       </div>
     </div>
   <div class="row">
-       <div class="col-md mb-4 invert">
-         <a href="images/riley-gardiner-dice-light.jpg" class="progressive replace">
-           <img src="images/riley-gardiner-dice-light-small.jpg" class="preview" alt="Riley Gardiner - 3D 3" />
-         </a>
+       <div class="col-md mb-4">
+           <img src="images/riley-gardiner-dice-light.jpg" class="d-block w-100" alt="Riley Gardiner - 3D 3" />
       </div>
-      <div class="col-md mb-3 invert">
-        <a href="images/riley-gardiner-tincture.jpg" class="progressive replace">
-          <img src="images/riley-gardiner-tincture-small.jpg" class="preview" alt="Riley Gardiner - 3D 4" />
-        </a>
+      <div class="col-md mb-3">
+          <img src="images/riley-gardiner-tincture.jpg" class="d-block w-100" alt="Riley Gardiner - 3D 4" />
       </div>
   </div>
   <div class="row mt-3 mb-4">
       <div class="col">
-          <p>Selected 3D renders</p>
+          <p>Selected 3D renders.</p>
       </div>
   </div>
 
@@ -192,31 +194,23 @@
 </div>
 <div class="row mt-3 mb-4">
     <div class="col">
-        <p>3D render and animation at <i><a href="https://www.instagram.com/reel/CUdK3c_FNq_/"target="_blank">Livestock</a></i></p>
+        <p class="links">3D render and animation at <i><a href="https://www.instagram.com/reel/CUdK3c_FNq_/"target="_blank">Livestock</a></i>.</p>
     </div>
 </div>
 <div class="row mb-4">
-  <div class="col-md mb-4 invert">
-    <a href="images/riley-gardiner-uaq21.jpg" class="progressive replace">
-      <img src="images/riley-gardiner-uaq21-small.jpg" class="preview" alt="Riley Gardiner - Cover 1" />
-    </a>
+  <div class="col-md mb-4">
+      <img src="images/riley-gardiner-annexia-cover.png" class="d-block w-100" alt="Riley Gardiner - Cover 1" />
   </div>
-  <div class="col-md mb-4 invert">
-    <a href="images/riley-gardiner-uaq26.jpg" class="progressive replace">
-      <img src="images/riley-gardiner-uaq26-small.jpg" class="preview" alt="Riley Gardiner - Cover 2" />
-    </a>
+  <div class="col-md mb-4">
+      <img src="images/riley-gardiner-uaq26.jpg" class="d-block w-100" alt="Riley Gardiner - Cover 2" />
   </div>
 </div>
 <div class="row">
-   <div class="col-md mb-4 invert">
-     <a href="images/riley-gardiner-uaq14.jpg" class="progressive replace">
-       <img src="images/riley-gardiner-uaq14_small.jpg" class="preview" alt="Riley Gardiner - Cover 3" />
-     </a>
+   <div class="col-md mb-4">
+       <img src="images/riley-gardiner-uaq14.jpg" class="d-block w-100" alt="Riley Gardiner - Cover 3" />
   </div>
-  <div class="col-md mb-3 invert">
-    <a href="images/riley-gardiner-uaq27.jpg" class="progressive replace">
-      <img src="images/riley-gardiner-uaq27-small.jpg" class="preview" alt="Riley Gardiner - Cover 4" />
-    </a>
+  <div class="col-md mb-3">
+      <img src="images/riley-gardiner-uaq27.jpg" class="d-block w-100" alt="Riley Gardiner - Cover 4" />
   </div>
 </div>
 
@@ -228,7 +222,7 @@
 </div>
 <div class="row mt-3 mb-4">
     <div class="col">
-        <p>3D render and animated birthday card</p>
+        <p>3D render and animated birthday card.</p>
     </div>
 </div>
 
@@ -239,65 +233,27 @@
 </div>
 <div class="row">
        <div class="col">
-        <p>Logo for Manchester based internet radio show <i>Annexia</i></p>
-       </div>
-</div>
-<br>
-<div class="row justify-content-lg-center">
-    <div class="col-lg-7 invert">
-         <a href="images/riley-gardiner-annexia-cover.png" class="img-fluid progressive replace d-block w-100">
-          <img src="images/riley-gardiner-annexia-cover-small.jpg" class="preview" alt="Riley Gardiner - Annexia Mix Cover" />
-        </a>
-    </div>
-</div>
-<br>
-<div class="row mb-2">
-       <div class="col">
-        <p>Mix cover for <i>Annexia</i></p>
+        <p class="links">Logo for Manchester based internet radio show <i><a href="https://soundcloud.com/annexiaradio/"target="_blank">Annexia</a></i>.</p>
        </div>
 </div>
 
+<br>
 
     <div class="row mb-3 justify-content-center">
-      <div class="col-md-6 mb-4 invert">
-        <a href="images/riley-gardiner-sarin2.png" class="progressive replace">
-          <img src="images/riley-gardiner-posters-small-3.jpg" class="preview" alt="Riley Gardiner - Event Flyer 1" />
-        </a>
+      <div class="col-md-6 mb-4">
+          <img src="images/riley-gardiner-sarin2.png"  alt="Riley Gardiner - Event Flyer 1" />
       </div>
       <div class="col-md-6 mb-3 invert">
-        <a href="images/riley-gardiner-webnacht1.png" class="progressive replace">
-          <img src="images/riley-gardiner-posters-small-4.jpg" class="preview" alt="Riley Gardiner - Event Flyer 2" />
-        </a>
+          <img src="images/riley-gardiner-webnacht1.png" class="preview" alt="Riley Gardiner - Event Flyer 2" />
       </div>
  </div>
-  <div class="row mb-2">
-       <div class="col">
-          <p>Event flyers</p>
-       </div>
-   </div>
-
-
-<div class="row mb-5">
-  <div class="col">
-    <img src="images/riley-gardiner-phantom-golf-logo.png" class="img-fluid invert" loading=lazy alt="Riley Gardiner - Phantom Golf Logo">
-  </div>
-</div>
-<div class="row mb-4">
-       <div class="col">
-         <p>Logotype for fictional survival horror golfing video game <i>Phantom Golf</i></p>
-       </div>
-</div>
 
 <div class="row justify-content-center">
   <div class="col-md-6 mb-4 invert">
-    <a href="images/riley-gardiner-rave-jester.jpg" class="progressive replace">
-      <img src="images/riley-gardiner-rave-jester-small.jpg" class="preview" alt="Riley Gardiner - Poster 1" />
-    </a>
+      <img src="images/riley-gardiner-rave-jester.jpg" class="d-block w-100" alt="Riley Gardiner - Poster 1" />
   </div>
       <div class="col-md-6 mb-4 invert">
-        <a href="images/riley-gardiner-abstract-2.png" class="progressive replace">
-          <img src="images/riley-gardiner-abstract-small-2.jpg" class="preview" alt="Riley Gardiner - Abstract 2" />
-        </a>
+          <img src="images/riley-gardiner-abstract-2.png" class="d-block w-100" alt="Riley Gardiner - Abstract 2" />
   </div>
  </div>
 
