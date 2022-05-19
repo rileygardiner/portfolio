@@ -79,9 +79,10 @@ img {
   }
 }
 
-
-.featherlight .featherlight-content {
-	background: transparent;
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
 
 .carousel-inner img {
@@ -111,30 +112,6 @@ margin: auto;
      color: transparent;
      text-shadow: #ff0000 0 0 8px; text-decoration: none;
   }
-
-  .progressive {
-    position:relative;display:block;overflow:hidden;outline:none
-    -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
-
-    }
-  .progressive img{
-      display:block;width:100%;max-width:none;height:auto;border:0}.progressive img.preview{filter:blur(2vw);transform:scale(1.05)
-        -webkit-filter: drop-shadow(5px 5px 5px #000);
-      filter: drop-shadow(5px 5px 5px #000);
-}
-  .progressive img.reveal{
-        position:absolute;left:0;top:0;animation:progressiveReveal 1s linear
-        -webkit-filter: drop-shadow(5px 5px 5px #000);
-      filter: drop-shadow(5px 5px 5px #000);
-
-        }
-    /*  @keyframes progressiveReveal{0%{transform:scale(1.05);opacity:0}to{transform:scale(1);opacity:1}}*/
-
-
-.invert {
-
-}
 
 .spin {
      overflow-x: hidden;
