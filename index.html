@@ -16,17 +16,10 @@
 
 <meta name="description" content="Riley Gardiner is a graphic designer based in Toronto, Canada. He also produces music under the name Crisis Actor."/><meta property="og:title" content="Riley Gardiner">
 
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
 <!-- Favicon, CSS -->
 
 <link rel="shortcut icon" href="https://64.media.tumblr.com/49027f4bf668acddd040697a2a9112a8/38f641f96fa511f1-e3/s1280x1920/bd064eb08b785285f5eeb1ce8278245927fe7bdb.png"/>
 <link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-
-
 
 <title>Riley Gardiner</title>
 
@@ -36,22 +29,20 @@
 <script>
   $( function() {
     var state = true;
-    $( "img" ).on( "click", function() {
-      $("a").css("filter", "invert(1)");
-
+    $( "img,.invert" ).on( "click", function() {
+      $(".invert-me").css("filter", "invert(1)");
       if ( state ) {
         $( "body" ).animate({
-          backgroundColor: "#ffffff",
+          backgroundColor: "#fafafa",
           color: "#000000",
         }, 300 );
 
       }
       else {
-        $("a").css("filter", "invert(0)");
-
+        $(".invert-me").css("filter", "invert(0)");
         $( "body" ).animate({
           backgroundColor: "#000000",
-          color: "#ffffff",
+          color: "#fafafa",
 
         }, 300 );
       }
@@ -61,190 +52,16 @@
 </script>
 
 
+
 </head>
+
 <body>
 
-  <!-- header -->
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <a href="mailto:riley@rileygardiner.com"><h1>Riley Gardiner</h1></a> is a graphic designer and 3D artist based in Toronto, Canada. Currently at <a href="https://www.concrete.ca"target="_blank">Concrete</a>. Formerly at <a href="https://www.deadstock.ca"target="_blank">Livestock</a>. He also produces music under the name <a href="https://soundcloud.com/crisis-actor"target="_blank">Crisis Actor</a>.
-          </div>
-        </div>
-      </div>
-  </div>
+
+
+<p><a href="mailto:riley@rileygardiner.com">Riley Gardiner</a> is a graphic designer and 3D artist based in Toronto, Canada. Currently at <a href="https://concrete.ca"target="_blank">Concrete.</a> He also produces music under the name <a href="https://soundcloud.com/crisis-actor"target="_blank">Crisis Actor</a>.</p>
 <br>
-
-<!-- main container-->
-
-<div class="container">
-
-
-<div class="row mt-5 mb-5">
-        <div class="col spin mx-auto text-center">
-            <img src="images/riley-gardiner-cd.png" loading="eager" class="rotate img-fluid replace" alt="Riley Gardiner - CD">
-        </div>
-</div>
-
-<br>
-
-<div class="row">
-<div class="embed-responsive embed-responsive-16by9">
-  <video class="embed-responsive" width="100%" playsinline autoplay loop muted="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-render.mp4">
-  </video>
-</div>
-</div>
-<div class="row mt-4 mb-4">
-    <div class="col">
-        <p class="links">3D animation for Manchester based internet radio show <i><a href="https://soundcloud.com/annexiaradio/"target="_blank">Annexia</a></i>.</p>
-    </div>
-</div>
-
-<div class="row">
-  <div class="col-md mb-4">
-      <img src="images/riley-gardiner-fmail-1.jpg" loading="lazy" class="d-block w-100 img-fluid " alt="Riley Gardiner - Foreign Mail Design" />
-  </div>
-  <div class="col-md mx-auto text-center mb-4">
-      <img src="images/riley-gardiner-fmail-2.jpg" loading="lazy" class="d-block w-100 img-fluid " alt="Riley Gardiner - Foreign Mail Artwork" />
-  </div>
-</div>
-
-<div class="row mt-4 mb-4">
-      <div class="col">
-          <p class="links">Design and Artwork for the FMAIL 01 compilation on <i><a href="https://foreignmail.bandcamp.com/album/foreign-mail-01/"target="_blank">Foreign Mail</a></i>. </p>
-      </div>
-  </div>
-
-  <div class="row mt-5 mb-5">
-          <div class="col-">
-              <img src="images/riley-gardiner-epilogue.jpg" class="mx-auto d-block img-fluid" loading="lazy" alt="Riley Gardiner - SBVRSV Epilogue">
-          </div>
-  </div>
-
-  <div class="row mt-1 mb-4">
-        <div class="col">
-            <p class="links">Artwork for the SBVRSV compilation <i><a href="https://sbvrsv.bandcamp.com/album/epilogue"target="_blank">Epilogue</a></i>.</p>
-        </div>
-    </div>
-<br>
-
-<div class="row">
-<div class="col">
- <img class="d-block w-100 replace img-fluid" src="images/annexia_logo_chrome.png" loading=lazy alt="Riley Gardiner - Annexia Logo Chrome">
-</div>
-</div>
-<div class="row">
-     <div class="col">
-      <p class="links">Logo for <i><a href="https://soundcloud.com/annexiaradio/"target="_blank">Annexia</a></i>.</p>
-     </div>
-</div>
-
-<br>
-
-    <div class="row">
-    <div class="embed-responsive embed-responsive-1by1">
-      <video class="invert embed-responsive mx-auto text-center" width="80%" playsinline autoplay loop muted="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-annexia-covers.mp4">
-      </video>
-    </div>
-    </div>
-    <br>
-    <div class="row mt-1 mb-4">
-        <div class="col">
-            <p class="links">Mix covers for <i><a href="https://soundcloud.com/annexiaradio/"target="_blank">Annexia</a></i>.</p>
-        </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md mb-4">
-          <img src="images/riley-gardiner-3d-apartment.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - 3D 1" />
-      </div>
-      <div class="col-md mb-4">
-          <img src="images/riley-gardiner-3d-building.jpg"loading="lazy"  class="d-block w-100 img-fluid" alt="Riley Gardiner - 3D 2" />
-      </div>
-    </div>
-  <div class="row">
-       <div class="col-md mb-4">
-           <img src="images/riley-gardiner-dice-light.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - 3D 3" />
-      </div>
-      <div class="col-md mb-3">
-          <img src="images/riley-gardiner-tincture.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - 3D 4" />
-      </div>
-  </div>
-  <div class="row mt-3 mb-4">
-      <div class="col">
-          <p>Selected 3D renders.</p>
-      </div>
-  </div>
-
-<div class="row">
-<div class="embed-responsive embed-responsive-16by9">
-  <video class="invert embed-responsive" width="100%" autoplay playsinline loop muted src="videos/riley-gardiner-livestock-logo.mp4">
-  </video>
-</div>
-</div>
-<br>
-<div class="row mt-3 mb-4">
-    <div class="col">
-        <p class="links">3D animation at <i><a href="https://www.instagram.com/reel/CUdK3c_FNq_/"target="_blank">Livestock</a></i>.</p>
-    </div>
-</div>
-<div class="row">
-  <div class="col-md mb-4">
-      <img src="images/riley-gardiner-uaq27.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - Cover 1" />
-  </div>
-  <div class="col-md mb-4">
-      <img src="images/riley-gardiner-uaq26.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - Cover 2" />
-  </div>
-</div>
-<div class="row">
-   <div class="col-md mb-4">
-       <img src="images/riley-gardiner-uaq14.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - Cover 3" />
-  </div>
-  <div class="col-md mb-3">
-      <img src="images/riley-gardiner-uaq29.jpg" loading="lazy" class="d-block w-100 img-fluid" alt="Riley Gardiner - Cover 4" />
-  </div>
-</div>
-
-<div class="row">
-<div class="embed-responsive embed-responsive-16by9">
-  <video class="embed-responsive" width="100%" playsinline autoplay loop muted="this.paused ? this.play() : this.pause();" src="videos/riley-gardiner-birthday.mp4">
-  </video>
-</div>
-</div>
-<div class="row mt-3 mb-4">
-    <div class="col">
-        <p>Animated birthday card.</p>
-    </div>
-</div>
-
-
-<br>
-
-<!-- footer -->
-    <div class="container footer">
-      <div class="row justify-content-evenly mt-5 mb-5">
-          <div class="col-md mb-3">
-              <a href="mailto:riley@rileygardiner.com">Email</a>
-          </div>
-          <div class="col-md mb-3">
-              <a href="https://instagram.com/rileygardiner" target="_blank">Instagram</a>
-          </div>
-          <div class="col-md mb-3">
-              <a href="https://www.are.na/riley-gardiner"target="_blank">Are.na</button></a>
-            </div>
-          <div class="col-md mb-3">
-              <a href="https://drive.google.com/file/d/1b31w3ZckJ9JgPyu7uSPm7-H-jUBRCsy7/view?usp=sharing"target="_blank">Resume</button></a>
-          </div>
-      </div>
-    </div>
-
-
-
-<!-- closing body tag -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
+<p><a href="https://instagram.com/rileygardiner" target="_blank">@rileygardiner</a></p>
 
 
 </body>
